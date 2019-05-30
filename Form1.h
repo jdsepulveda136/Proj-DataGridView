@@ -295,7 +295,7 @@ private: System::Void Bt_delvazio_Click(System::Object^ sender, System::EventArg
 	{
 	for (int i = 0; i < data_nomes->Rows->Count; i++)
 	{
-		if (Convert::ToString(data_nomes->Rows[i]->Cells[0]->Value) == " ")
+		if (data_nomes->Rows[i]->Cells[0]->Value == "")
 		{
 			data_nomes->Rows->RemoveAt(i);
 		}
